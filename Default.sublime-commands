@@ -28,8 +28,28 @@
         "command": "perforce_diff"
     },
     {
-        "caption": "Perforce: Graphical Diff with Depot",
-        "command": "perforce_graphical_diff_with_depot"
+        "caption": "Perforce: Diff Against Have Revision",
+        "command": "perforce_graphical_diff_with_depot",
+        "args":
+        {
+            "target_revision": "have"
+        }
+    },
+    {
+        "caption": "Perforce: Diff Against Latest Revision",
+        "command": "perforce_graphical_diff_with_depot",
+        "args":
+        {
+            "target_revision": "head"
+        }
+    },
+    {
+        "caption": "Perforce: Diff Against Specific Revision",
+        "command": "perforce_graphical_diff_with_depot",
+        "args":
+        {
+            "target_revision": "specific_revision"
+        }
     },
     {
         "caption": "Perforce: Select Graphical Diff Application",
@@ -66,5 +86,9 @@
     {
         "caption": "Perforce: Unshelve Changelist",
         "command": "perforce_unshelve_cl"
+    },
+    {
+        "caption": "Perforce: Show Revisions List",
+        "command": "perforce_show_revisions_list"
     }
 ]

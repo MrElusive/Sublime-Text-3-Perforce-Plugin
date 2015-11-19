@@ -27,11 +27,11 @@
             },
             {
                 "command": "perforce_create_changelist",
-                "caption": "Create Changelist" 
+                "caption": "Create Changelist"
             },
             {
                 "command": "perforce_delete",
-                "caption": "Delete" 
+                "caption": "Delete"
             },
             {
                 "command": "perforce_diff",
@@ -43,21 +43,41 @@
                 [
                     {
                         "command": "perforce_graphical_diff_with_depot",
-                        "caption": "Diff"
+                        "caption": "Diff Against Have Revision",
+                        "args":
+                        {
+                            "target_revision": "have"
+                        }
+                    },
+                    {
+                        "command": "perforce_graphical_diff_with_depot",
+                        "caption": "Diff Against Latest Revision",
+                        "args":
+                        {
+                            "target_revision": "head"
+                        }
+                    },
+                    {
+                        "command": "perforce_graphical_diff_with_depot",
+                        "caption": "Diff Against Specific Revision",
+                        "args":
+                        {
+                            "target_revision": "specific_revision"
+                        }
                     },
                     {
                         "command": "perforce_select_graphical_diff_application",
                         "caption": "Select Diff Application"
                     }
                 ]
-            },            
+            },
             {
                 "command": "perforce_list_checked_out_files",
                 "caption": "List Checked Out Files"
             },
             {
                 "command": "perforce_move_current_file_to_changelist",
-                "caption": "Move Current File To Changelist"                        
+                "caption": "Move Current File To Changelist"
             },
             {
                 "command": "perforce_rename",
@@ -84,6 +104,10 @@
                         "caption": "Unshelve Changelist"
                     }
                 ]
+            },
+            {
+                "command": "perforce_show_revisions_list",
+                "caption": "Show Revisions List"
             },
             {
                 "command": "perforce_logout",

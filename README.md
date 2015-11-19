@@ -7,7 +7,7 @@ Supports auto add and checkout with commands to add, checkout, delete, diff, ren
 The preferred method is to use the [Sublime Package Manager](http://wbond.net/sublime_packages/package_control). Alternatively, the files can be obtained on github:
 
     $ https://github.com/ericmartel/Sublime-Text-3-Perforce-Plugin
-    
+
 ### Install Note
 
 If the plugin is unable to use your p4, it is possible that it keeps reporting that the file is not under the client root.  User @JLoppert suggests creating a symlink under OSX/Linux
